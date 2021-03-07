@@ -380,7 +380,7 @@ header {
 .works-step div {
    color: #e67e22;
    border: 2px solid #e67e22;
-   display: inline-block;
+   display: block;
    border-radius: 50%;
    height: 55px;
    width: 55px;
