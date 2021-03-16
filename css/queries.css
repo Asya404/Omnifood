@@ -1,7 +1,7 @@
 
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {
-   .hero-text-box {
+   .hero-textbox {
       width: 100%;
       padding: 0 2%;
    }
@@ -21,26 +21,26 @@
       margin-left: 10%;
    }
 
-   .steps-box:first-child,
-   .steps-box:last-child {margin-top: 10px;}
+   .steps__box:first-child,
+   .steps__box:last-child {margin-top: 10px;}
 
-   .works-step {margin-bottom: 40px;}
-   .works-step:last-of-type {margin-bottom: 60px;}
+   .steps__feature {margin-bottom: 40px;}
+   .steps__feature:last-of-type {margin-bottom: 60px;}
 
    .app-screen {width: 50%;}
 
-   .icon-small {
+   .icon__small {
       width: 17px;
       margin-right: 10px;
    }
-   .city-feature {font-size: 90%;}
+   .city__feature {font-size: 90%;}
 
-   .plan-box {
+   .plans__box {
       width: 100%;
       margin-left: 0;
    }
 
-   .plan-price {font-size: 250%;}
+   .plans__price {font-size: 250%;}
 
    .contact-form {width: 80%;}
 }
@@ -53,7 +53,7 @@
    section {padding: 30px 0;}
 
    .row,
-   .hero-text-box {padding: 0 4%;}
+   .hero-textbox {padding: 0 4%;}
    .col {
       width: 100%;
       margin: 0 0 4% 0;
@@ -61,7 +61,7 @@
 
 
    .main-nav {display: none;}
-   .mobile-nav-icon { display: inline-block; }
+   .mobile-nav__icon { display: inline-block; }
 
    .main-nav {
       float: left;
@@ -82,8 +82,8 @@
    .sticky .main-nav { margin-top: 10px; }
    .sticky .main-nav li a:link,
    .sticky .main-nav li a:visited { padding: 10px 0; }
-   .sticky .mobile-nav-icon { margin-top: 15px; }
-   .sticky .mobile-nav-icon ion-icon { color: #555; }
+   .sticky .mobile-nav__icon { margin-top: 15px; }
+   .sticky .mobile-nav__icon ion-icon { color: #555; }
 
    
 
@@ -96,12 +96,12 @@
 
    .app-screen {width: 40%;}
 
-   .works-step {margin-bottom: 20px;}
-   .works-step:last-of-type {margin-bottom: 20px;}
+   .steps__feature {margin-bottom: 20px;}
+   .steps__feature:last-of-type {margin-bottom: 20px;}
 
-   .steps-box:first-child {text-align: center;}
+   .steps__box:first-child {text-align: center;}
 
-   .works-step div {
+   .steps__feature div {
       height: 40px;
       width: 40px;
       padding: 4px;

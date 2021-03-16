@@ -104,14 +104,14 @@ h2:after {
 
 /* ----- ICONS ----- */
 
-.icon-big {
+.icon__big {
    font-size: 350%;
    display: block;
    color: #e67e22;
    margin-bottom: 10px;
 }
 
-.icon-small {
+.icon__small {
    display: inline-block;  
    width: 30px;
    text-align: center;
@@ -159,16 +159,16 @@ input[type=submit] {
    transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link,
-.btn-full:visited,
+.btn__full:link,
+.btn__full:visited,
 input[type=submit] {
    background-color: #e67e22;
    color:#fff;
    margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btn__ghost:link,
+.btn__ghost:visited {
    color: #e67e22;
 }
 
@@ -180,8 +180,8 @@ input[type=submit]:active {
    border: 1px solid #cf6d17;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.btn__ghost:hover,
+.btn__ghost:active {
    color:#fff;   
 }
 
@@ -197,7 +197,7 @@ header {
    height: 100vh;
 }
 
-.hero-text-box {
+.hero-textbox {
    position: absolute;
    width: 1140px;
    top: 50%;
@@ -208,7 +208,6 @@ header {
 .logo {
    height: 100px;
    width: auto;
-   float: left;
    margin-top: 20px;
 }
 
@@ -221,9 +220,12 @@ header {
 }
 
 /* Main navi */
+.nav {
+   display: flex;
+   justify-content: space-between;
+}
 
 .main-nav {
-   float: right;
    list-style: none;
    margin-top: 55px;
 }
@@ -251,7 +253,7 @@ header {
 
 /* Mobile navi */
 
-.mobile-nav-icon {
+.mobile-nav__icon {
    float: right;
    margin-top: 20px;
    display: none;
@@ -259,12 +261,12 @@ header {
    cursor: pointer;
 }
 
-.mobile-nav-icon:link,
-.mobile-nav-icon:visited {
+.mobile-nav__icon:link,
+.mobile-nav__icon:visited {
    border: 0;
 }
 
-.mobile-nav-icon ion-icon {
+.mobile-nav__icon ion-icon {
    font-size: 200%;
    color: #fff;
 }
@@ -303,7 +305,7 @@ header {
 /* FEATURES */
 /* ---------------------------- */
 
-.section-features .long-copy {
+.features .long-copy {
    margin-bottom: 30px;
 }
 
@@ -311,36 +313,36 @@ header {
 /* MEALS */
 /* ---------------------------- */
 
-.section-meals {
+.meals {
    padding: 0;
 }
 
-.meals-showcase {
+.meals__showcase {
    list-style: none;
    width: 100%;
 }
 
-.meals-showcase li {
+.meals__showcase li {
    display: block;
    float: left;
    width: 25%;
 }
 
-.meals-photo {
+.meals__photo {
    width: 100%;
    margin: 0;
    overflow: hidden;
    background-color: #000;
 }
 
-.meals-photo img {
+.meals__photo img {
    opacity: 0.7;
    width: 100%;
    height: auto;
    transform: scale(1.15);
 }
 
-.meals-photo img:hover {
+.meals__photo img:hover {
    opacity: 1;
    transform: scale(1.03);
    transition: transform 0.5s, opacity 0.5s;
@@ -350,17 +352,17 @@ header {
 /* HOW IT WORKS */
 /* ---------------------------- */
 
-.section-steps {
+.steps {
    background-color: #f4f4f4;
 }
 
-.steps-box:first-child {
+.steps__box:first-child {
    text-align: right;
    padding-right: 3%;
    margin-top: 30px;
 }
 
-.steps-box:last-child {
+.steps__box:last-child {
    padding-left: 3%;
    margin-top: 70px;  
 }
@@ -369,15 +371,15 @@ header {
    width: 40%;
 }
 
-.works-step {
+.steps__feature {
    margin-bottom: 50px;
 }
 
-.works-step:last-of-type {
+.steps__feature:last-of-type {
    margin-bottom: 90px;
 }
 
-.works-step div {
+.steps__feature div {
    color: #e67e22;
    border: 2px solid #e67e22;
    display: block;
@@ -391,12 +393,12 @@ header {
    margin-right: 25px;
 }
 
-.btn-app:link,
-.btn-app:visited {
+.btn__app:link,
+.btn__app:visited {
    border: 0;
 }
 
-.btn-app img {
+.btn__app img {
    height: 50px;
    width: auto;
    margin-right: 10px;
@@ -412,7 +414,7 @@ header {
    margin-bottom: 15px;
 }
 
-.city-feature {
+.city__feature {
    margin-bottom: 5px;
 }
 
@@ -420,7 +422,7 @@ header {
 /* TESTIMONIALS */
 /* ---------------------------- */
 
-.section-testimonials {
+.testimonials {
    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../css/img/back-customers.jpg);
    background-size: cover;
    color: #fff;
@@ -462,11 +464,11 @@ cite img {
 /* SIGN UP */
 /* ---------------------------- */
 
-.section-plans {
+.plans {
    background-color: #f4f4f4;
 }
 
-.plan-box {
+.plans__box {
    background-color: #fff;
    border-radius: 5px;
    width: 90%;
@@ -474,43 +476,43 @@ cite img {
    box-shadow: 0 2px 2px #efefef;
 }
 
-.plan-box div {
+.plans__box div {
    padding: 15px;
    border-bottom: 1px solid #e8e8e8;
 }
 
-.plan-box div:first-child {
+.plans__box div:first-child {
    background-color: #fcfcfc;
    border-top-right-radius: 5px;
    border-top-left-radius: 5px;
 }
 
-.plan-box div:last-child {
+.plans__box div:last-child {
    text-align: center;
    border: none;
 }
 
-.plan-price {
+.plans__price {
    font-size: 300%;
    margin-bottom: 10px;
    font-weight: 100;
    color: #e67e22;
 }
 
-.plan-price span {
+.plans__price span {
    font-size: 30%;
    font-weight: 300;
 }
 
-.plan-price-meal {
+.plans__price-meal {
    font-size: 80%;
 }
 
-.plan-box ul {
+.plans__box ul {
    list-style: none;
 }
 
-.plan-box ul li {
+.plans__box ul li {
    padding: 5px 0;
 }
 
@@ -518,7 +520,7 @@ cite img {
 /* FORM */
 /* ---------------------------- */
 
-.contact-form {
+.form {
    width: 60%;
    margin: 0 auto;
 }
@@ -594,23 +596,23 @@ footer {
    font-size: 160%;
 }
 
-.logo-facebook,
-.logo-twitter,
-.logo-google,
-.logo-instagram {
+.social-links__facebook,
+.social-links__twitter,
+.social-links__google,
+.social-links__instagram {
    transition: color 0.2s;
 }
 
-.logo-facebook:hover {
+.logo__facebook:hover {
    color: #3b5998 ;
 }
-.logo-twitter:hover {
+.logo__twitter:hover {
    color: #55acee;
 }
-.logo-google:hover {
+.logo__google:hover {
    color: #dd4b39;
 }
-.logo-instagram:hover {
+.logo__instagram:hover {
    color: #fbad50;
 }
 

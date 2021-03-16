@@ -2,7 +2,7 @@ $(document).ready(function () {
 
    /* Waipoints for triggering functions on scroll */
    /* For the sticky navigation */
-   $('.js--section-features').waypoint(function (direction) {
+   $('.js--features').waypoint(function (direction) {
       if (direction == "down") {
          $('nav').addClass('sticky')
       } else {
@@ -15,11 +15,11 @@ $(document).ready(function () {
 
    /* Scroll on buttons */
    $('.js--scroll-to-plans').click(function () {
-      $('html, body').animate({ scrollTop: $('.js--section-plans').offset().top }, 100)
+      $('html, body').animate({ scrollTop: $('.js--plans').offset().top }, 100)
    })
 
    $('.js--scroll-to-start').click(function () {
-      $('html, body').animate({ scrollTop: $('.js--section-features').offset().top }, 100)
+      $('html, body').animate({ scrollTop: $('.js--features').offset().top }, 100)
    })
 
 

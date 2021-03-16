@@ -5,6 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
    <link rel="stylesheet" type="text/css" href="css/Grid.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -31,27 +33,29 @@
    <header>
       <nav>
          <div class="row">
-            <img class="logo" src="img/logo-white.png" alt="Omnifood logo">
-            <img class="logo-black" src="img/logo-black.png" alt="Omnifood logo">
-            <ul class="main-nav js--main-nav">
-               <li><a href="#features">Food delivery</a></li>
-               <li><a href="#works">How it works</a></li>
-               <li><a href="#cities">Our cities</a></li>
-               <li><a href="#plans">Sign up</a></li>
-            </ul>
-            <a class="mobile-nav-icon js--nav-icon">
-               <ion-icon name="menu-outline"></ion-icon>
-            </a>
+            <div class="nav">
+               <img class="logo" src="img/logo-white.png" alt="Omnifood logo">
+               <img class="logo-black" src="img/logo-black.png" alt="Omnifood logo">
+               <ul class="main-nav js--main-nav">
+                  <li><a href="#features">Food delivery</a></li>
+                  <li><a href="#works">How it works</a></li>
+                  <li><a href="#cities">Our cities</a></li>
+                  <li><a href="#plans">Sign up</a></li>
+               </ul>
+               <a class="mobile-nav__icon js--nav-icon">
+                  <ion-icon name="menu-outline"></ion-icon>
+               </a>
+            </div>
          </div>
       </nav>
-      <div class="hero-text-box">
+      <div class="hero-textbox">
          <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-         <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
-         <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+         <a class="btn btn__full js--scroll-to-plans" href="#">I’m hungry</a>
+         <a class="btn btn__ghost js--scroll-to-start" href="#">Show me more</a>
       </div>
    </header>
 
-   <section class="section-features js--section-features" id="features">
+   <section class="features js--features" id="features">
       <div class="row">
          <h2>Get food fast &mdash; not fast food.</h2>
          <p class="long-copy">
@@ -63,7 +67,7 @@
       <div class="row js--wp-1">
 
          <div class="col span-1-of-4 box">
-            <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
+            <ion-icon class="icon__big" name="infinite-outline"></ion-icon>
             <h3>Up to 365 days/year</h3>
             <p>
                Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You
@@ -72,7 +76,7 @@
          </div>
 
          <div class="col span-1-of-4 box">
-            <ion-icon class="icon-big" name="time-outline"></ion-icon>
+            <ion-icon class="icon__big" name="time-outline"></ion-icon>
             <h3>Ready in 20 minutes</h3>
             <p>
                You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
@@ -81,7 +85,7 @@
          </div>
 
          <div class="col span-1-of-4 box">
-            <ion-icon class="icon-big" name="nutrition-outline"></ion-icon>
+            <ion-icon class="icon__big" name="nutrition-outline"></ion-icon>
             <h3>100% organic</h3>
             <p>
                All our vegetables are fresh, organic and local. Animals are raised without added hormones or
@@ -90,7 +94,7 @@
          </div>
 
          <div class="col span-1-of-4 box">
-            <ion-icon class="icon-big" name="cart-outline"></ion-icon>
+            <ion-icon class="icon__big" name="cart-outline"></ion-icon>
             <h3>Order anything</h3>
             <p>
                We don't limit your creativity, which means you can order whatever you feel like. You can also choose
@@ -100,86 +104,86 @@
       </div>
    </section>
 
-   <section class="section-meals">
-      <ul class="meals-showcase clearfix">
+   <section class="meals">
+      <ul class="meals__showcase clearfix">
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/1.jpg" alt="Korean bibimbap with egg and vegetables">
             </figure>
          </li>
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
             </figure>
          </li>
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/3.jpg" alt="Chicken breast steak with vegetables">
             </figure>
          </li>
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/4.jpg" alt="Autumn pumpkin soup">
             </figure>
          </li>
       </ul>
 
-      <ul class="meals-showcase clearfix">
+      <ul class="meals__showcase clearfix">
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/5.jpg" alt="Paleo beef steak with vegetables">
             </figure>
          </li>
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/6.jpg" alt="Healthy baguette with egg and vegetables">
             </figure>
          </li>
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/7.jpg" alt="Burger with cheddar and bacon">
             </figure>
          </li>
          <li>
-            <figure class="meals-photo">
+            <figure class="meals__photo">
                <img src="img/8.jpg" alt="Granola with cherries and strawberries">
             </figure>
          </li>
       </ul>
    </section>
 
-   <section class="section-steps" id="works">
+   <section class="steps" id="works">
       <div class="row">
          <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
 
       <div class="row">
-         <div class="col span-1-of-2 steps-box">
+         <div class="col span-1-of-2 steps__box">
             <img class="app-screen js--wp-2" src="img/app-iPhone.png" alt="Omnifood app on iPhone">
          </div>
 
-         <div class="col span-1-of-2 steps-box">
-            <div class="works-step">
+         <div class="col span-1-of-2 steps__box">
+            <div class="steps__feature">
                <div>1</div>
                <p>Choose the subscription plan that best fits your needs and sign up today.</p>
             </div>
-            <div class="works-step">
+            <div class="steps__feature">
                <div>2</div>
                <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
             </div>
-            <div class="works-step">
+            <div class="steps__feature">
                <div>3</div>
                <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
             </div>
 
-            <a class="btn-app" href="#"><img src="img/download-app-iphone.png" alt="App Store Button"></a>
-            <a class="btn-app" href="#"><img src="img/download-app-android.png" alt="Play Store Button"></a>
+            <a class="btn__app" href="#"><img src="img/download-app-iphone.png" alt="App Store Button"></a>
+            <a class="btn__app" href="#"><img src="img/download-app-android.png" alt="Play Store Button"></a>
          </div>
       </div>
 
    </section>
 
-   <section class="section-cities" id="cities">
+   <section class="cities" id="cities">
       <div class="row">
          <h2>We're currently in these cities</h2>
       </div>
@@ -188,16 +192,16 @@
          <div class="col span-1-of-4 box">
             <img src="img/lisbon.jpg" alt="Lisbon">
             <h3>Lisbon</h3>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="person"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="person"></ion-icon>
                1600+ happy eaters
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="star"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="star"></ion-icon>
                60+ top chefs
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="logo-twitter"></ion-icon>
                <a href="">@omnifood_lx</a>
             </div>
          </div>
@@ -205,16 +209,16 @@
          <div class="col span-1-of-4 box">
             <img src="img/san-francisco.jpg" alt="San-Francisco">
             <h3>San Francisco</h3>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="person"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="person"></ion-icon>
                3700+ happy eaters
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="star"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="star"></ion-icon>
                160+ top chefs
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="logo-twitter"></ion-icon>
                <a href="">@omnifood_sf</a>
             </div>
          </div>
@@ -222,16 +226,16 @@
          <div class="col span-1-of-4 box">
             <img src="img/berlin.jpg" alt="Berlin">
             <h3>Berlin</h3>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="person"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="person"></ion-icon>
                2300+ happy eaters
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="star"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="star"></ion-icon>
                110+ top chefs
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="logo-twitter"></ion-icon>
                <a href="">@omnifood_berlin</a>
             </div>
          </div>
@@ -239,16 +243,16 @@
          <div class="col span-1-of-4 box">
             <img src="img/london.jpg" alt="London">
             <h3>London</h3>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="person"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="person"></ion-icon>
                1200+ happy eaters
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="star"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="star"></ion-icon>
                50+ top chefs
             </div>
-            <div class="city-feature">
-               <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+            <div class="city__feature">
+               <ion-icon class="icon__small" name="logo-twitter"></ion-icon>
                <a href="">@omnifood_london</a>
             </div>
          </div>
@@ -258,7 +262,7 @@
 
    </section>
 
-   <section class="section-testimonials">
+   <section class="testimonials">
       <div class="row">
          <h2>Our customers can't live without us</h2>
       </div>
@@ -268,7 +272,7 @@
             <blockquote>
                Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood
                is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-               <cite><img src="img/customer-1.jpg">Alberto Duncan</cite>
+               <cite><img src="img/customer-1.jpg" alt="Customer 1 photo">Alberto Duncan</cite>
             </blockquote>
          </div>
 
@@ -276,7 +280,7 @@
             <blockquote>
                Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery
                here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-               <cite><img src="img/customer-2.jpg">Joana Silva</cite>
+               <cite><img src="img/customer-2.jpg" alt="Customer 2 photo">Joana Silva</cite>
             </blockquote>
          </div>
 
@@ -284,113 +288,113 @@
             <blockquote>
                I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended
                up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-               <cite><img src="img/customer-3.jpg">Milton Chapman</cite>
+               <cite><img src="img/customer-3.jpg" alt="Customer 3 photo">Milton Chapman</cite>
             </blockquote>
          </div>
 
       </div>
    </section>
 
-   <section class="section-plans js--section-plans" id="plans">
+   <section class="plans js--plans" id="plans">
       <div class="row">
          <h2>Start eating healthy today</h2>
       </div>
       <div class="row">
 
          <div class="col span-1-of-3">
-            <div class="plan-box js--wp-4">
+            <div class="plans__box js--wp-4">
 
                <div>
                   <h3>Premium</h3>
-                  <p class="plan-price">399$ <span>/ month</span></p>
-                  <p class="plan-price-meal">That’s only 13.30$ per meal</p>
+                  <p class="plans__price">399$ <span>/ month</span></p>
+                  <p class="plans__price-meal">That’s only 13.30$ per meal</p>
                </div>
 
                <div>
                   <ul>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>1 meal every day
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>1 meal every day
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Order 24/7
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Order 24/7
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Access to newest creations
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Access to newest creations
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Free delivery
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Free delivery
                      </li>
                   </ul>
                </div>
 
                <div>
-                  <a href="#" class="btn btn-full">Sign up now</a>
+                  <a href="#" class="btn btn__full">Sign up now</a>
                </div>
 
             </div>
          </div>
 
          <div class="col span-1-of-3">
-            <div class="plan-box">
+            <div class="plans__box">
 
                <div>
                   <h3>Pro</h3>
-                  <p class="plan-price">149$ <span>/ month</span></p>
-                  <p class="plan-price-meal">That’s only 14.90$ per meal</p>
+                  <p class="plans__price">149$ <span>/ month</span></p>
+                  <p class="plans__price-meal">That’s only 14.90$ per meal</p>
                </div>
 
                <div>
                   <ul>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>1 meal 10 days/month
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>1 meal 10 days/month
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Order 24/7
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Order 24/7
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Access to newest creations
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Access to newest creations
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Free delivery
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Free delivery
                      </li>
                   </ul>
                </div>
 
                <div>
-                  <a href="#" class="btn btn-ghost">Sign up now</a>
+                  <a href="#" class="btn btn__ghost">Sign up now</a>
                </div>
 
             </div>
          </div>
 
          <div class="col span-1-of-3">
-            <div class="plan-box">
+            <div class="plans__box">
 
                <div>
                   <h3>Starter</h3>
-                  <p class="plan-price">19$ <span>/ meal</span></p>
-                  <p class="plan-price-meal">&nbsp;</p>
+                  <p class="plans__price">19$ <span>/ meal</span></p>
+                  <p class="plans__price-meal">&nbsp;</p>
                </div>
 
                <div>
                   <ul>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>1 meal
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>1 meal
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Order from 8 am to 12 pm
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Order from 8 am to 12 pm
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="close"></ion-icon>
+                        <ion-icon class="icon__small" name="close"></ion-icon>
                      </li>
                      <li>
-                        <ion-icon class="icon-small" name="checkmark"></ion-icon>Free delivery
+                        <ion-icon class="icon__small" name="checkmark"></ion-icon>Free delivery
                      </li>
                   </ul>
                </div>
 
                <div>
-                  <a href="#" class="btn btn-ghost">Sign up now</a>
+                  <a href="#" class="btn btn__ghost">Sign up now</a>
                </div>
 
             </div>
@@ -399,13 +403,13 @@
       </div>
    </section>
 
-   <section class="section-form">
+   <section class="form">
       <div class="row">
          <h2>We're happy to hear from you</h2>
       </div>
 
       <div class="row">
-         <form method="post" action="#" class="contact-form">
+         <form method="post" action="#">
 
             <div class="row">
                <div class="col span-1-of-3">
@@ -459,7 +463,7 @@
 
             <div class="row">
                <div class="col span-1-of-3">
-                  <label for="">&nbsp;</label>
+                  <label>&nbsp;</label>
                </div>
                <div class="col span-2-of-3">
                   <input type="submit" value="Send it!">
@@ -484,16 +488,16 @@
          <div class="col span-1-of-2">
             <ul class="social-links">
                <li><a href="#">
-                     <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                     <ion-icon class="social-links__facebook" name="logo-facebook"></ion-icon>
                   </a></li>
                <li><a href="#">
-                     <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
+                     <ion-icon class="social-links__twitter" name="logo-twitter"></ion-icon>
                   </a></li>
                <li><a href="#">
-                     <ion-icon class="logo-google" name="logo-google"></ion-icon>
+                     <ion-icon class="social-links__google" name="logo-google"></ion-icon>
                   </a></li>
                <li><a href="#">
-                     <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+                     <ion-icon class="social-links__instagram" name="logo-instagram"></ion-icon>
                   </a></li>
             </ul>
          </div>
